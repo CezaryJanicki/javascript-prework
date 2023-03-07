@@ -1,0 +1,103 @@
+body {
+    text-align: center;
+    height: 100%;
+}
+
+h1 { 
+    color: #f8f8f8; 
+    font-family: 'Trocchi', serif; 
+    font-size: 50px; 
+    font-weight: normal; 
+    line-height: 48px; 
+    padding: 0px; 
+    margin: 0 auto 40px auto; 
+}
+
+p { 
+    color: #f8f8f8; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 24px; 
+    font-weight: 500; 
+    line-height: 32px; 
+    margin: 0 0 24px; 
+    padding: 40px;
+}
+
+.img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.button {
+  background-image: linear-gradient(92.88deg, #68a368 9.16%, #539446 43.89%, #72d177 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #f8f8f8; 
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: 'Raleway',sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  height: 4rem;
+  padding-bottom: 70px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+   user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+#messages {
+  background-image: linear-gradient(92.88deg, #4cc492 9.16%, #20c271 43.89%, #319c51 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #f8f8f8; 
+  cursor: pointer;
+  line-height: 3rem;
+  flex-shrink: 0;
+  font-family: 'Raleway',sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 14rem;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  transition: all .5s;
+  touch-action: manipulation;
+  margin: 40px;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: none;
+}
+
+#messages:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+  }
+
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0 2.6rem;
+  }
+}

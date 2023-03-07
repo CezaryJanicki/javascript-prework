@@ -14,7 +14,13 @@ function playGame(playerInput)  {
     }
   }
 
+
+  function showElem() {
+    document.getElementById('messages').style.display = "block";
+  }
+
   function displayResult(computerMove, playerMove){
+    showElem();
     printMessage('Zagrałem ' + computerMove + ', a Ty ' + playerMove);
 
     if (computerMove == playerMove) {
