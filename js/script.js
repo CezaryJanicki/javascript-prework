@@ -5,13 +5,15 @@ function getMoveName(argMoveId){
     return 'papier'
   } else if (argMoveId == 3){
     return 'nożyce'
-  } else return 'nieznany ruch';
+  } else {
+    return 'nieznany ruch';
+  }
 }
 
 function displayResult(computerMove, playerMove){
   printMessage('Zagrałem ' + computerMove + ', a Ty ' + playerMove);
 
-  if (computerMove == 'kamień' && playerMove == 'kamień' || computerMove == 'nożyce' && playerMove == 'nożyce' || computerMove == 'papier' && playerMove == 'papier') {
+  if (computerMove ==  playerMove) {
     printMessage('Remis!');
   } else if (computerMove == 'kamień' && playerMove == 'nożyce' || computerMove == 'nożyce' && playerMove == 'papier' || computerMove == 'papier' && playerMove == 'kamień') {
     printMessage('Komputer Wygrywa!');
@@ -38,5 +40,5 @@ let computerMove = getMoveName(randomNumber);
 
 printMessage('Ruch komputera to: ' + computerMove);
 
-displayResult(playerMove, computerMove);
+displayResult(computerMove, playerMove);
 
