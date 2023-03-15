@@ -1,4 +1,5 @@
-const playGame = function(playerInput)  {
+{
+  const playGame = function(playerInput)  {
 
     clearMessages();
 
@@ -16,7 +17,8 @@ const playGame = function(playerInput)  {
 
 
     const showElem = function() {
-      document.getElementById('messages').style.display = "block";
+      const messages =  document.getElementById('messages');
+      messages.style.display = "block";
     }
 
     const displayResult = function(computerMove, playerMove) {
@@ -51,14 +53,22 @@ const playGame = function(playerInput)  {
     displayResult(computerMove, playerMove);
   }
 
-document.getElementById('play-rock').addEventListener('click', function () {
+const rockElement = document.getElementById('play-rock');
+
+rockElement.addEventListener('click', function () {
   playGame(1);
 });
 
-document.getElementById('play-paper').addEventListener('click', function () {
+const playPaper = document.getElementById('play-paper');
+
+playPaper.addEventListener('click', function () {
   playGame(2);
 });
 
-document.getElementById('play-scissors').addEventListener('click', function () {
+const playScissors = document.getElementById('play-scissors');
+
+playScissors.addEventListener('click', function () {
   playGame(3);
 });
+
+}
